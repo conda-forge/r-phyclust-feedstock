@@ -1,4 +1,4 @@
-{% set version = "0.1-33" %}
+{% set version = "0.1-34" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/phyclust_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/phyclust/phyclust_{{ version }}.tar.gz
-  sha256: 38786608193bcad6aeb5517f2d5f836c9773bdd09fc484b4bd40b06a71f5a413
+  sha256: d2047030e9f24c5dc8bbb378867fbcb8e71d1f1c2ab77e9285f79f670568f5f3
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
